@@ -19,7 +19,7 @@
       padding: 20px;
       & input, & select{
         width: 100%;
-        height: 3em;
+        height: 61px;
         margin-bottom: 30px;
         padding: 10px;
         border-radius: 5px;
@@ -29,17 +29,10 @@
         background-color: #3f51b5;
         border: none;
         width: 100%;
-        height: 3em;
+        height: 61px;
         color: white;
         cursor: pointer;
       }
-    }
-
-    & .error{
-      width: 100%;
-      background-color: red;
-      margin-bottom: 30px;
-      border-radius: 5px;
     }
   }
   & img{

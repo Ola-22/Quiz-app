@@ -45,7 +45,7 @@
 
 .home-container div:first-of-type .select input, .home-container div:first-of-type .select select {
   width: 100%;
-  height: 3em;
+  height: 61px;
   margin-bottom: 30px;
   padding: 10px;
   border-radius: 5px;
@@ -56,16 +56,9 @@
   background-color: #3f51b5;
   border: none;
   width: 100%;
-  height: 3em;
+  height: 61px;
   color: white;
   cursor: pointer;
-}
-
-.home-container div:first-of-type .error {
-  width: 100%;
-  background-color: red;
-  margin-bottom: 30px;
-  border-radius: 5px;
 }
 
 .home-container img {
