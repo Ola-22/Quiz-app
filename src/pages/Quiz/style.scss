@@ -9,4 +9,12 @@
     background-color: white;
     color: black;
   }
+  .quiz-info{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
