@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./style.css";
+import Question from "../../Components/Question";
 
 export default function Quiz({
   name,
@@ -20,7 +21,7 @@ export default function Quiz({
           ...questions[currQues]?.incorrect_answers,
         ])
     );
-  }, [questions]);
+  }, [questions, currQues]);
   console.log(options);
 
   const handleShuffle = (optionss) => {
@@ -35,6 +36,16 @@ export default function Quiz({
             <span>{questions[currQues].category}</span>
             <span>Score: {score}</span>
           </div>
+          <Question
+            currQues={currQues}
+            setCurrQues={setCurrQues}
+            questions={questions}
+            options={options}
+            correct={questions[currQues]?.correct_answer}
+            score={score}
+            setScore={setScore}
+            setQuestions={setQuestions}
+          />
         </>
       ) : (
         <div>Loading...</div>

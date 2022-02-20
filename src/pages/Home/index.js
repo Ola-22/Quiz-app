@@ -2,6 +2,7 @@ import "./style.css";
 import Categories from "../../Data/Categories";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { ErrorMessage } from "../../Components/ErrorMessage";
 
 export default function Home({ name, setName, fetchQuestions }) {
   const navigate = useNavigate();
@@ -27,7 +28,7 @@ export default function Home({ name, setName, fetchQuestions }) {
         <span style={{ fontSize: "30px" }}>Quiz Settings</span>
 
         <div className="select">
-          {error && <div className="error">Please Fill all the Fields</div>}
+          {error && <ErrorMessage>Please Fill all the Fields</ErrorMessage>}
 
           <input
             type="text"
