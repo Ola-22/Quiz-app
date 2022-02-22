@@ -1,16 +1,17 @@
+@import "../../styles/variables";
+@import "../../styles/main";
+
 .header{
-  display: flex;
+  @extend .flexBox;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   & a{
-    color: white;
+    color: $whiteColor;
     font-size: 40px;
     cursor: pointer;
   }
   & hr{
-    color: white;
+    color: $whiteColor;
     width: 100%;
     margin: 10px;
   }
