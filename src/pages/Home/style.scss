@@ -1,15 +1,14 @@
+@import "../../styles/variables";
+@import "../../styles/main";
+
 .home-container{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  // flex-wrap: wrap;
+  @extend .flexBox;
+  flex-wrap: nowrap;
 
   & div:first-of-type{
     width: 100%;
-    display: flex;
+    @extend .flexBox;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
     padding: 10px;
     & .select{
       display: flex;
@@ -53,7 +52,6 @@
     & img{
       width: 98%;
       padding-top: 20px;
-  
     }
   }
 }
