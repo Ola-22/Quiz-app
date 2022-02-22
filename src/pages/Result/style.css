@@ -1,0 +1,46 @@
+.flexBox, .result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+button {
+  width: 158px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+}
+
+.result {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 60vh;
+}
+
+.result span {
+  font-size: 30px;
+}
+
+.result div {
+  text-transform: uppercase;
+  font-size: 8vw;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.result button {
+  background-color: #3f51b5;
+}
+/*# sourceMappingURL=style.css.map */
