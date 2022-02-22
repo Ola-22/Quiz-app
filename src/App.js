@@ -5,6 +5,7 @@ import Result from "./pages/Result";
 import Header from "./Components/Header";
 import { useState } from "react";
 import axios from "axios";
+import "./styles/main.css";
 
 function App() {
   const [name, setName] = useState("");
@@ -37,7 +38,10 @@ function App() {
               />
             }
           />
-          <Route path="/result" element={<Result />} />
+          <Route
+            path="/result"
+            element={<Result name={name} score={score} />}
+          />
           <Route
             path="/"
             element={
